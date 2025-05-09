@@ -1,0 +1,93 @@
+/* 
+
+-------------- TYPOGRAPHY --------------
+
+FONT FAMILY
+Playfair Display
+
+FONT SIZE
+16px / 24px 
+
+FONT WEIGHT
+400 / 800
+
+LINE HEIGHT
+1.2 / 1.5
+
+------- COLORS -------
+(white) #ffffff
+(Black) #000000
+(Lavender Blue) #9c9ec4
+(Cream Yellow) #ffefb1
+(Light Gray) #aaaaaa
+
+*/
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lavander-blue: #9c9ec4;
+    --color-cream-yellow: #ffefb1;
+    --color-light-gray: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-black);
+    background-color: var(--color-lavander-blue);
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+    margin: 3rem auto;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    /* overflow: hidden; */
+}
+
+.tagline {
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+    border-radius: 5px 25px 25px 5px ;
+    background-color: var(--color-cream-yellow);
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-description {
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 1rem;
+    color: var(--color-light-gray)
+}
+
+.product-description p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
